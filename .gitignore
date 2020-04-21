@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/PPT
+/FakeAPI/bin/Debug/netstandard2.0
+/FakeAPI/obj
+/PPT/bin/Debug/netcoreapp3.1
+/PPT/obj
+/Shared/bin/Debug/netstandard2.0
+/Shared/obj

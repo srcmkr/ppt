@@ -1,0 +1,33 @@
+﻿@model FakeAPI.Models.UserModel
+@using PPT.Shared.Models
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Willkommen</h1>
+    @{
+        switch (Model.Role)
+        {
+            case ERole.Attendee:
+                <strong>Hier ist ein schönes Attendee-Dashboard</strong>
+                break;
+            case ERole.Staff:
+                <strong>Hier ist ein schönes Mitarbeiter-Dashboard</strong>
+                break;
+            case ERole.Trainer:
+                <strong>Hier ist ein schönes Trainer-Dashboard</strong>
+                break;
+            default:
+                <strong>Ich bin ein Gast (nichts initialisiert)</strong>
+                break;
+        }
+    }
+
+    <p class="p-lg-5">Ändere mich in der HomeController Zeile 22-24</p>
+    <p>Oben im Menü klicke auf Benutzerliste (Disposition-Gruppe erforderlich)</p>
+    <p class="p-lg-5">
+        <code>Frontend: switch (User.Role) { case EUserRole.Attendee // case EUserRole.Staff // case EUserRole.Trainer // ... }</code>
+    </p>
+
+</div>

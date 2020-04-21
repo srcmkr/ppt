@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0006: Metadatendatei "C:\Users\bbolz\source\repos\PPT\FakeAPI\bin\Debug\netstandard2.0\FakeAPI.dll" wurde nicht gefunden.
+dotnet_diagnostic.CS0006.severity = none

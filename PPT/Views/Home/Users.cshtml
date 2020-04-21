@@ -1,0 +1,25 @@
+﻿@model List<FakeAPI.Models.UserModel>
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>Benutzer</h1>
+<p>Login-Simulation kann in der HomeController Zeile 22-24 eingestellt werden. An dieser Stelle wird normalerweise mit Token authentifiziert (statt direkter Übergabe des Benutzerobjekts)</p>
+
+<table width="50%">
+    <tr>
+        <th>E-Mail</th>
+        <th>Gruppe</th>
+    </tr>
+    @foreach(var user in Model)
+    {
+        <tr>
+            <td>@user.Email</td>
+            <td>@user.Group.Name</td>
+        </tr>
+    }
+</table>
+
+<p class="p-lg-5">
+    <code>Backend: [RequirePermission(EPermissions.users_list_all)]</code>
+</p>
